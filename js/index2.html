@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Here, It's Bootstrap Responsive Navbar -->
+    <nav class="navbar navbar-blue bg-dark navbar-expand-lg fixed-top">
+        <a href="#" class="navbar-brand">My Portfolio</a>
+
+        <button class="navbar-toggler navbar-toggler-blue" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggle-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="nav-link">Skills</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <h4 style="margin: 30px 30px 0">Above, it's Navigation using Bootstrap very efficint.</h4>
+    <br>
+
+    <!-- Here, It's Bootstrap Modals -->
+    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin-left: 30px">Launch
+        Modal</button>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hello World!</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>I'm Heet Doshi Web Developer.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+
+    <!-- Here, It's Bootstrap Form -->
+    <h4 style="margin-left: 30px">Below, It's Form using Bootstrap.</h4>
+    <div class="container" style="margin-top: 20px;">
+        <form>
+
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="email">Email : </label>
+                <div class="col-md-9 ">
+                    <input type="email" class="form-control" id="email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="password">Password : </label>
+                <div class="col-md-9 ">
+                    <input type="password" class="form-control" id="password">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-9 offset-sm-3">
+                    <button type="submit" class="btn btn-primary navbar-expand-md">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootsrap List Groups -->
+    <h4 style="margin-left: 30px">It's List Group!</h4>
+    <div class="container" style="margin-top: 30px;">
+        <div class="list-group">
+            <a href="#" class="list-group-item active">
+                Home
+            </a>
+            <a href="#" class="list-group-item list-group-flush">
+                Skills
+            </a>
+            <a href=" #" class="list-group-item active ">
+                Contact
+            </a>
+        </div>
+    </div>
+    <br>
+    <!-- Digital Card using Bootstrap -->
+
+    <h4 style="margin-left: 30px">It's Digital Card. You can make it.</h4>
+    <div class="container" style="margin-top: 30px">
+        <div class="card">
+            <img class="card-img-top" src="https://placeimg.com/640/480/nature" alt="nature Image">
+
+            <div class="card-body">
+                <h5 class="card-title mb-0">Card Title</h5>
+                <p class="card-text">Card Paragraph</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item">Item 2</li>
+                <li class="list-group-item">Item 3</li>
+                <li class="list-group-item">Item 4</li>
+                <li class="list-group-item">Item 5</li>
+            </ul>
+            <!-- List Group -->
+            <div class="card-body">
+                <a href="#" class="btn btn-primary">Button One</a>
+                <a href="#" class="btn btn-primary">Button Two</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap table -->
+
+    <div class="container" style="margin-top: 30px">
+        <table class="table table-bordered table-hover table-sm">
+            <thead>
+                <tr>
+                    <th style="padding-right: 10px">ID</th>
+                    <th style="padding-right: 25px">Name</th>
+                    <th style="padding-right: 10px">Age</th>
+                    <th style="padding-right: 15px">Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>18</td>
+                    <td>Heet</td>
+                    <td>20</td>
+                    <td>India</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Utsav</td>
+                    <td>21</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Dharmik</td>
+                    <td>20</td>
+                    <td>Canada</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap Alerts -->
+    <div class="container" style="margin-top: 30px">
+        <div class="alert alert-danger">
+            Hello! This is an alert.
+            <button class="close" data-dismiss="alert">&times;</button>
+            <button class="close" data-dismiss="alert">Close</button>
+            <h4 class="alert-heading">Warning!</h4>
+            <p class="mb-0">Keep Learning is the best.</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap Navigation Options -->
+    <h4 style="margin-left: 30px">It's Navigation Option using Bootstrap.</h4>
+    <div class="container" style="margin-top: 30px">
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Item 1</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-lin dropdown-toggle" data-toggle="dropdown">Item 2</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Pizza</a>
+                    <a href="#" class="dropdown-item">Chinese</a>
+                    <a href="#" class="dropdown-item">Punjabi</a>
+                    <a href="#" class="dropdown-item">Italian</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">Casata</a>
+                    <a href="#" class="dropdown-item">Butter Skotch</a>
+                    <a href="#" class="dropdown-item">Chocolate Ice cream</a>
+                    <a href="#" class="dropdown-item">Special Lassi</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" style="margin-left: 30px">Item 3</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" style="margin-bottom: 30px">Item 4</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Optional Javascript -->
+    <!-- jQuery First then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
