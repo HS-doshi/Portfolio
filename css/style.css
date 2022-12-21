@@ -151,7 +151,7 @@ header {
 }
 
 .logo {
-    max-width: 80px;
+    max-width: 70px;
 }
 
 .nav {
@@ -302,7 +302,7 @@ header {
 
 .my-services {
     background-color: var(--clr-light);
-    background-image: url(../image/services-bg.jpg);
+    background-image: url(../image/service.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
@@ -481,14 +481,10 @@ header {
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    /* padding: 10px; */
+    justify-content: center;
+    padding: 15px;
 }
 
-.portfolio>img {
-    width: 130px;
-    height: 80px;
-}
 
 .portfolio__item {
     /* background: var(--clr-accent); */
@@ -510,7 +506,10 @@ header {
 .portfolio__img {
     width: 200px;
     height: 300px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
 }
 
 .portfolio__item:focus {
@@ -574,6 +573,17 @@ background: var(--clr-light);
 opacity: 0.75;
 }
 */
+
+.social-list--work::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.4em auto 0.5em;
+    background: var(--clr-light);
+    opacity: 0.75;
+}
+
 .social-list {
     list-style: none;
     display: flex;
