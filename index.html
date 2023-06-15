@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="https://t4.ftcdn.net/jpg/04/39/00/53/360_F_439005350_b90FEyTdw13dOg4l2OVf3A6wy1sm8rra.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heet Portfolio Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -15,6 +16,38 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
+    <style>
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        .logo img {
+            height: 30px;
+            /* Adjust the height as per your logo's dimensions */
+            margin-right: 10px;
+            /* Add spacing between the logo and search bar */
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .search-bar input[type="text"] {
+            border: none;
+            outline: none;
+            width: 200px;
+            padding: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -104,12 +137,13 @@
         <p class="section__subtitle section__subtitle--about">Web Developer</p>
 
         <div class="about-me__body">
-            <p>Hello Guys, I'm Heet Doshi. I am pursuing third year of Bachlor of Engineering. I'm doing undergraduate
+            <p>Hello Guys, I'm Heet Doshi. I am pursuing final of Bachlor of Engineering. I'm doing undergraduate
                 in Information Technology From <strong>GCET.</strong>
             </p>
-            <p>I'm a <strong>Web Developer.</strong> I love front-end the most. I have done many projects based on
-                Javascript, React &
-                Next JS. Currently I'm exploring something new & leaning new Technology.
+            <p>I am a highly passionate web developer with expertise in HTML, CSS, and JavaScript. I possess strong
+                skills in popular frameworks like React and have hands-on experience working with APIs. I am open to
+                continuous learning and possess the confidence to collaborate effectively within a team to achieve the
+                organization's goals.
             </p>
         </div>
 
@@ -122,57 +156,195 @@
         <h2 class="section__title section__title--work">Projects</h2>
         <p class="section__subtitle section__subtitle--work"></p>
 
-        <div class="portfolio">
+
+        <div class="row" style="justify-content: center; padding-bottom: 10px;">
+
+            <div class="project-card col-md-4">
+                <div class="project-card-view card">
+                    <img card="card-img-top" src="./image/airbnb2.jpg.png" alt="card-img">
+                    <div class="card-body">
+                        <h2 class="section__title section__title--work section__title--img">Airbnb Clone</h2>
+                        <p class="card-text" style="text-align: justify;">
+                            Created a React-based clone of Airbnb, leveraging key concepts such as useState, useEffect,
+                            and props to build a highly interactive and dynamic user interface.Utilized React's
+                            useEffect hook to fetch and display real-time data, including property
+                            listings, availability, and pricing, ensuring an up-to-date browsing experience for users.
+                        </p>
+                        <div class="card-btns">
+                            <a href="https://github.com/HS-doshi/Airbnb-Clone" target="_blank"
+                                class="btn btn-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                    </path>
+                                </svg>
+                                <strong> &nbsp;GitHub</strong></a>
+                            </a>
+                            <a href="https://airbn-project.netlify.app/" target="_blank" class="btn btn-primary"
+                                style="margin-left: 10px;"><svg stroke="currentColor" fill="none" stroke-width="0"
+                                    viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14 7C13.4477 7 13 7.44772 13 8V16C13 16.5523 13.4477 17 14 17H18C18.5523 17 19 16.5523 19 16V8C19 7.44772 18.5523 7 18 7H14ZM17 9H15V15H17V9Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44772 9 6 9H10C10.5523 9 11 8.55228 11 8C11 7.44772 10.5523 7 10 7H6Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44772 13 6 13H10C10.5523 13 11 12.5523 11 12C11 11.4477 10.5523 11 10 11H6Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M5 16C5 15.4477 5.44772 15 6 15H10C10.5523 15 11 15.4477 11 16C11 16.5523 10.5523 17 10 17H6C5.44772 17 5 16.5523 5 16Z"
+                                        fill="currentColor"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z"
+                                        fill="currentColor"></path>
+                                </svg> <strong> &nbsp;Demo</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card col-md-4">
+                <div class="project-card-view card">
+                    <img card="card-img-top" src="./image/weather (1).png" alt="card-img">
+                    <div class="card-body">
+                        <h2 class="section__title section__title--work section__title--img">Live Weather App</h2>
+                        <p class="card-text" style="text-align: justify;">
+                            Developed a dynamic web application utilizing APIs and the Fetch API to retrieve real-time
+                            weather data from OpenWeather website and display it in a user-friendly format.
+                        </p>
+                        <div class="card-btns">
+                            <a href="https://github.com/HS-doshi/Weather-App" target="_blank"
+                                class="btn btn-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                    </path>
+                                </svg>
+                                <strong> &nbsp;GitHub</strong></a>
+                            </a>
+                            <a href="https://weather-live-ap.netlify.app/" target="_blank" class="btn btn-primary"
+                                style="margin-left: 10px;"><svg stroke="currentColor" fill="none" stroke-width="0"
+                                    viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14 7C13.4477 7 13 7.44772 13 8V16C13 16.5523 13.4477 17 14 17H18C18.5523 17 19 16.5523 19 16V8C19 7.44772 18.5523 7 18 7H14ZM17 9H15V15H17V9Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44772 9 6 9H10C10.5523 9 11 8.55228 11 8C11 7.44772 10.5523 7 10 7H6Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44772 13 6 13H10C10.5523 13 11 12.5523 11 12C11 11.4477 10.5523 11 10 11H6Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M5 16C5 15.4477 5.44772 15 6 15H10C10.5523 15 11 15.4477 11 16C11 16.5523 10.5523 17 10 17H6C5.44772 17 5 16.5523 5 16Z"
+                                        fill="currentColor"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z"
+                                        fill="currentColor"></path>
+                                </svg> <strong> &nbsp;Demo</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card col-md-4">
+                <div class="project-card-view card">
+                    <img card="card-img-top" src="./image/redux_pro.png" alt="card-img">
+                    <div class="card-body">
+                        <h2 class="section__title section__title--work section__title--img">React-Redux</h2>
+                        <p class="card-text" style="text-align: justify;">
+                            Developed a robust web application using Redux Toolkit, a powerful library for state
+                            management, to perform Create, Read, Update, and Delete operations on a centralized data
+                            store.
+                            Utilized Redux Toolkit's simplified API and defining actions, reducers, and
+                            state management logic.
+                        </p>
+                        <div class="card-btns">
+                            <a href="https://github.com/HS-doshi/Redux-Toolkit-Project" target="_blank"
+                                class="btn btn-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                    </path>
+                                </svg>
+                                <strong> &nbsp;GitHub</strong></a>
+                            </a>
+                            <a href="https://redux-toolkit-pro.netlify.app/" target="_blank" class="btn btn-primary"
+                                style="margin-left: 10px;"><svg stroke="currentColor" fill="none" stroke-width="0"
+                                    viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14 7C13.4477 7 13 7.44772 13 8V16C13 16.5523 13.4477 17 14 17H18C18.5523 17 19 16.5523 19 16V8C19 7.44772 18.5523 7 18 7H14ZM17 9H15V15H17V9Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44772 9 6 9H10C10.5523 9 11 8.55228 11 8C11 7.44772 10.5523 7 10 7H6Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44772 13 6 13H10C10.5523 13 11 12.5523 11 12C11 11.4477 10.5523 11 10 11H6Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M5 16C5 15.4477 5.44772 15 6 15H10C10.5523 15 11 15.4477 11 16C11 16.5523 10.5523 17 10 17H6C5.44772 17 5 16.5523 5 16Z"
+                                        fill="currentColor"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z"
+                                        fill="currentColor"></path>
+                                </svg> <strong> &nbsp;Demo</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card col-md-4">
+                <div class="project-card-view card">
+                    <img card="card-img-top" src="./image/todo.jpg.png" alt="card-img">
+                    <div class="card-body">
+                        <h2 class="section__title section__title--work section__title--img">Todo App</h2>
+                        <p class="card-text" style="text-align: justify;">
+                            Developed a feature-rich web application to manage tasks and improve productivity, utilizing
+                            modern web technologies such as React, Redux.
+                            Implemented core functionalities like creating, editing, and deleting tasks, as well as
+                            organizing them into categories or priorities.
+                        </p>
+                        <div class="card-btns">
+                            <a href="https://github.com/HS-doshi/Todo_project" target="_blank"
+                                class="btn btn-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                    </path>
+                                </svg>
+                                <strong> &nbsp;GitHub</strong></a>
+                            </a>
+                            <a href="https://todonoteapp.netlify.app/" target="_blank" class="btn btn-primary"
+                                style="margin-left: 10px;"><svg stroke="currentColor" fill="none" stroke-width="0"
+                                    viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14 7C13.4477 7 13 7.44772 13 8V16C13 16.5523 13.4477 17 14 17H18C18.5523 17 19 16.5523 19 16V8C19 7.44772 18.5523 7 18 7H14ZM17 9H15V15H17V9Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44772 9 6 9H10C10.5523 9 11 8.55228 11 8C11 7.44772 10.5523 7 10 7H6Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44772 13 6 13H10C10.5523 13 11 12.5523 11 12C11 11.4477 10.5523 11 10 11H6Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M5 16C5 15.4477 5.44772 15 6 15H10C10.5523 15 11 15.4477 11 16C11 16.5523 10.5523 17 10 17H6C5.44772 17 5 16.5523 5 16Z"
+                                        fill="currentColor"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4ZM20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5Z"
+                                        fill="currentColor"></path>
+                                </svg> <strong> &nbsp;Demo</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Portfolio item 01 -->
-            <a href="#" class="portfolio__item">
-                <img src="./image/airbnb.jpg.png" alt="" class="portfolio__img">
-            </a>
-
-            <a href="#" class="portfolio__item">
-                <img src="./image/redux_pro.jpg.png" alt="Redux Project" class="portfolio__img">
-            </a>
-
-
-            <!-- Portfolio item 03 -->
-            <a href="#" class="portfolio__item">
-                <img src="./image/meme.jpg.png" alt="" class="portfolio__img">
-            </a>
-            <!-- Portfolio item 02 -->
-
-            <a href="#" class="portfolio__item">
-                <!-- <img src="./image/chrome.jpg.png" alt="" class="portfolio__img"> -->
-            </a>
-
-            <!-- Portfolio item 04 -->
-            <a href="#" class="portfolio__item">
-                <img src="./image/todo.jpg.png" alt="" class="portfolio__img">
-            </a>
-
-            <!-- Portfolio item 05 -->
             <!-- <a href="#" class="portfolio__item">
-                <img src="./image/tenzine.jpg.png" alt="" class="portfolio__img">
+                <img src="./image/airbnb2.jpg.png" alt="" class="portfolio__img">
+                <div class="portfolio__overlay">
+                    <div class="portfolio__buttons">
+                        <a href="#" class="portfolio__button">Source Code</a>
+                        <a href="#" class="portfolio__button">Live Demo</a>
+                    </div>
+                </div>
             </a> -->
 
-            <!-- Portfolio item 06 -->
-            <a href="#" class="portfolio__item">
-                <img src="./image/row-counter.jpg.png" alt="" class="portfolio__img">
-            </a>
-
-            <!-- Portfolio item 07 -->
-            <a href="#" class="portfolio__item">
-                <img src="./image/basknew.jpg.png" alt="" class="portfolio__img">
-            </a>
-
-            <!-- Portfolio item 08 -->
-
-            <a href="#" class="portfolio__item">
-                <!-- <img src="./image/note.jpg.png" alt="" class="portfolio__img"> -->
-            </a>
-
-            <!-- Portfolio item 08 -->
-            <a href="#" class="portfolio__item">
-                <!-- <img src="./image/black.jpg.png" alt="" class="portfolio__img"> -->
-            </a>
 
         </div>
     </section>
